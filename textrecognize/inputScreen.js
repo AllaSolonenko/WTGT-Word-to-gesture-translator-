@@ -81,7 +81,7 @@ export default class MainScreen extends React.Component {
   source={{ uri: this.state.videoArr[this.state.currentVideo]}}
   rate={1.0}
   volume={1.0}
-  isMuted={false}
+  isMuted={true}
   resizeMode="cover"
   shouldPlay
   ref={(ref) => {this._player = ref}}
