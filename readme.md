@@ -5,7 +5,7 @@
 
 ## Instalation
 to install app for Android you can use 
-[link]("https://drive.google.com/file/d/1lvKRSDbV323bu6bk3U-HPe_5cBGRqfDi/view?usp=sharing")
+[link](https://drive.google.com/file/d/1lvKRSDbV323bu6bk3U-HPe_5cBGRqfDi/view?usp=sharing)
 
 ____
 
