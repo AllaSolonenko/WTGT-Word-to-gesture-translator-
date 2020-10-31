@@ -1090,6 +1090,18 @@ export const search = {
       "word": "працює",
       "video": "https://media.spreadthesign.com/video/mp4/31/111512.mp4"
     },
+    {
+      "word": "активізувати",
+      "video": "https://media.spreadthesign.com/video/mp4/31/386717.mp4"
+    },
+    {
+      "word": "програма",
+      "video": "https://media.spreadthesign.com/video/mp4/31/329865.mp4"
+    },
+    {
+      "word": "працює",
+      "video": "https://media.spreadthesign.com/video/mp4/31/111512.mp4"
+    },
 
   ]
 };

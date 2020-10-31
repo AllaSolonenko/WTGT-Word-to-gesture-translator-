@@ -1,10 +1,9 @@
 import React from 'react';
-import { View, FlatList, TouchableOpacity, TextInput, StyleSheet, KeyboardAvoidingView, Text, Platform, Keyboard, TouchableWithoutFeedback,Dimensions}from 'react-native';
-import { ListItem } from 'react-native-elements';
-import SearchInput, { createFilter } from 'react-native-search-filter';
+import { View, TouchableOpacity, TextInput, StyleSheet, KeyboardAvoidingView, Text, Platform, Keyboard, TouchableWithoutFeedback,Dimensions, ScrollView}from 'react-native';
 import {search} from '../words/colors';
 import { Video } from 'expo-av';
-const KEYS_TO_FILTERS = ['word'];
+
+
 
 export default class MainScreen extends React.Component {
     constructor(props) {
@@ -39,7 +38,7 @@ export default class MainScreen extends React.Component {
   
 
       translateText=()=>{
-        console.log("new run")
+      //  console.log("new run")
        this.setState({ videoArr: ["https://www.w3schools.com/html/mov_bbb.mp4"], currentVideo:1 });
           for(let k=0; k<this.state.textin.length; k++){
           for(var i=0; i<search.Search.length; i++) {
@@ -52,9 +51,9 @@ export default class MainScreen extends React.Component {
           }
         }
         
-        console.log(this.state.videoArr)
-        console.log(this.state.currentVideo)
-        console.log(`${this.state.videoArr[this.state.currentVideo]}`)
+      //  console.log(this.state.videoArr)
+       // console.log(this.state.currentVideo)
+       // console.log(`${this.state.videoArr[this.state.currentVideo]}`)
       }
 
       searchFilterFunction = text => {
@@ -68,13 +67,13 @@ export default class MainScreen extends React.Component {
     this.setState({currentVideo:this.state.currentVideo + 1}); 
         }
       };
-    //  style={styles.container}
   
-    
     render() {
     return (
+<ScrollView>
+   <KeyboardAvoidingView style={styles.container} behavior={Platform.OS == "ios" ? "position" : null}
      
-      <KeyboardAvoidingView style={styles.container} behavior={Platform.OS == "ios" ? "padding" : "height"}>
+   >
          <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <View>
         <Video
@@ -116,8 +115,8 @@ export default class MainScreen extends React.Component {
 
     </View>
     </TouchableWithoutFeedback>
-      </KeyboardAvoidingView>
-    
+      </KeyboardAvoidingView> 
+      </ScrollView>
     );
     }
   }
